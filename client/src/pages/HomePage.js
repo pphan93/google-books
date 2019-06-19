@@ -1,6 +1,8 @@
 import React from "react";
 import { MDBEdgeHeader, MDBFreeBird, MDBContainer, MDBCol, MDBRow, MDBCardBody, MDBIcon, MDBNavLink,MDBFormInline,MDBBtn,MDBBtnGroup } from "mdbreact";
 import "./HomePage.css";
+import API from "../utils/API";
+
 
 class HomePage extends React.Component {
 
@@ -11,7 +13,13 @@ class HomePage extends React.Component {
 
   _submitInput = (e) => {
     e.preventDefault();
-console.log(this.state.searchInput)
+    API.getBooks(this.state.searchInput)
+      .then(res => {
+        console.log(res.data);
+        this.setState({ data: res.data });
+      })
+      .catch(err => console.log(err));
+console.log(this.state.data)
   }
 
   _handleChange = (e) => {
