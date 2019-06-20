@@ -70,7 +70,7 @@ class App extends Component {
           </main>
           <MDBFooter className="mt-4" color="unique-color-dark">
             <p className="footer-copyright mb-0 py-3 text-center">
-              &copy; {new Date().getFullYear()} Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+              &copy; {new Date().getFullYear()} Copyright: <a href="/"> Read Lounge </a>
             </p>
           </MDBFooter>
         </div>
