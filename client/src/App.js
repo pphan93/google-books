@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse,   MDBNavItem, MDBFooter, MDBNavLink } from "mdbreact";
-import { ReactComponent as Logo } from './assets/logo.svg';
 import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./Routes";
 
@@ -33,10 +32,9 @@ class App extends Component {
     return (
       <Router>
         <div className="flyout">
-          <MDBNavbar color="indigo" dark expand="md" fixed="top" scrolling>
+          <MDBNavbar color="unique-color-dark" dark expand="md" fixed="top" scrolling>
             <MDBNavbarBrand href="/">
-              <Logo style={{ height: '2.5rem', width: "2.5rem" }} />
-              MDB React
+              Read Lounge
             </MDBNavbarBrand>
             <MDBNavbarToggler onClick={this.toggleCollapse("mainNavbarCollapse")} />
             <MDBCollapse
@@ -57,7 +55,7 @@ class App extends Component {
                 <MDBNavItem>
                   <MDBNavLink
                     onClick={this.closeCollapse("mainNavbarCollapse")}
-                    to="/css"
+                    to="/saved"
                   >
                     Saved
                   </MDBNavLink>
@@ -70,7 +68,7 @@ class App extends Component {
           <main style={{ marginTop: "4rem" }}>
             <Routes />
           </main>
-          <MDBFooter className="mt-4" color="indigo">
+          <MDBFooter className="mt-4" color="unique-color-dark">
             <p className="footer-copyright mb-0 py-3 text-center">
               &copy; {new Date().getFullYear()} Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
             </p>

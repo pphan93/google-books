@@ -31,3 +31,7 @@ a.border.nav-link.border-light.rounded.mr-1:hover {
   width: 100%;
 
 }
+
+.unique-color-dark {
+  background-color: #1C2331 !important
+}

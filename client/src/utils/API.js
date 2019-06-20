@@ -5,5 +5,14 @@ import axios from "axios";
 export default {
   getBooks: function(query) {
     return axios.get("/api/search/searchBooks", { params: { q: query } });
+  },
+  saveBooks: function(booksData) {
+    return axios.post("/api/books", booksData);
+  },
+  getSavedBooks: function() {
+    return axios.get("/api/books");
+  },
+  deleteBook: function(id) {
+    return axios.delete("/api/books/" + id);
   }
 };

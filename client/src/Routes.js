@@ -4,7 +4,7 @@ import { Route, Switch } from "react-router-dom";
 
 import HomePage from "./pages/HomePage";
 
-import CSSNavPage from "./pages/CSSNavPage";
+import Saved from "./pages/Saved";
 
 
 class Routes extends React.Component {
@@ -12,7 +12,7 @@ class Routes extends React.Component {
     return (
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/css" component={CSSNavPage} />
+        <Route exact path="/saved" component={Saved} />
 
         <Route
           render={function () {
