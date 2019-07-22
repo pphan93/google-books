@@ -2,9 +2,7 @@
 
 React-based Google Books Search app. This assignment requires me to create React components, work with helper/util functions, and utilize React lifecycle methods to query and display books based on user searches. II'll also use Node, Express and MongoDB so that users can save books to review or purchase later.
 
-## [Try it yourself!](https://drink-order.herokuapp.com/) 
-
-### Or you can watch the demo video [here.](https://drive.google.com/open?id=1SM3lpGHSAa0Er6MWS2PpJTG1mApWink3)
+## [Try it yourself!](https://readlounge.herokuapp.com/) 
 
 ![image](./client/public/drinkOrder.png)
 
