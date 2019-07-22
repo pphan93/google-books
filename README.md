@@ -1,6 +1,6 @@
 # Read Lounge
 
-React-based Google Books Search app. This assignment requires me to create React components, work with helper/util functions, and utilize React lifecycle methods to query and display books based on user searches. II'll also use Node, Express and MongoDB so that users can save books to review or purchase later.
+React-based Google Books Search app. This assignment requires me to create React components, work with helper/util functions, and utilize React lifecycle methods to query and display books based on user searches. I also used Node, Express and MongoDB so that users can save books to review or purchase later.
 
 ## [Try it yourself!](https://readlounge.herokuapp.com/) 
 
